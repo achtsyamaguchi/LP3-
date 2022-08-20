@@ -28,9 +28,9 @@ a {
 
 
 .wrapper {
-  margin: 0 10rem;
+  margin: 0 8rem;
   @include mq(SP) {
-    margin: 0 2rem;
+    margin: 0 4rem;
   }
 }
 
@@ -98,13 +98,10 @@ a {
   padding: 3rem 10rem;
   max-width: 100%;
   @include mq(SP) {
-    padding: 3rem 2rem;
+    padding: 3rem 4rem;
   }
   .header_wrapper {
     margin: 0 auto;
-    @include mq(SP) {
-      
-    }
   }
   &_nav {
     @include mq(SP) { 
@@ -126,7 +123,8 @@ a {
       align-items: center;
       position: absolute;
       top: 50%;
-      left: 40%;
+      left: 50%;
+      transform: translateY(-50px) translateX(-50px);
     }
     &_li {
       margin-right: 6%;
@@ -226,22 +224,21 @@ a {
     font-size: clamp(2.4rem,2.31vw,4.4rem);
   }
   @include mq(SP) {
-    margin-bottom: 50%;
+    margin-bottom: 30%;
   }
 }
 
+// --------------------------------------------------
 #vision {
-  margin-bottom: 8%;
-  br {
-    display: none;
-  }
+  margin-bottom: 6%;
+  
   @include mq(SP) {
     br {
       display: block;
     }
   }
   @include mq(SP) {
-    margin-bottom: 30%;
+    margin-bottom: 20%;
   }
 }
 .topics {
@@ -269,6 +266,7 @@ a {
     }
   }
   &_txt {
+    
     border-left: 3px solid $black;
     padding: 1.5rem 0;
     padding-left: 2rem;
@@ -279,10 +277,13 @@ a {
         padding-bottom: 5%;
       }
     }
+    br {
+      display: none;
+    }
   }
   
   &_title {
-    font-size: clamp(2rem,1.11vw,2rem);
+    font-size: clamp(2.4rem,2.1vw,3rem);
     letter-spacing: 0.4rem;
     font-weight: bold;
     margin-bottom: 5%;
@@ -307,11 +308,11 @@ a {
 }
 
 .section_title {
-  font-size: clamp(2.8rem,2.31vw,4.4rem);
-  letter-spacing: 0.7rem;
+  font-size: clamp(3rem,2.57vw,3.6rem);
+  letter-spacing: 0.3rem;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 8%;
+  margin-bottom: 6%;
   @include mq(SP) {
     margin-bottom: 12%;
   }
@@ -326,7 +327,7 @@ a {
 }
 
 .vision_txt {
-  width: 40%;
+  width: 55%;
   padding-top: 15%;
   @include mq(SP) {
     width: 100%;
@@ -337,27 +338,29 @@ a {
     
   h2 {
     color: $green;
-    font-size: clamp(1.3rem,1vw,2rem);
+    font-size: clamp(1.6rem,1.42vw,2rem);
     letter-spacing: 0.3rem;
     text-align: right;
     line-height: 1.5;
-    margin-bottom: 10%;
+    margin-bottom: 8%;
     @include mq(SP) {
       text-align: left;
+      margin-bottom: 12%;
     }
-    @include mq(SP) {
-      margin-bottom: 15%;
-    }
+    // @include mq(SP) {
+    //   margin-bottom: 10%;
+    // }
     &::after {
       content: "";
       display: block;
-      height: 2.5px;
+      height: 3px;
       width: 36%;
       margin-left: auto;
       margin-top: 6%;
       background-color: $green;
       @include mq(SP) {
         width: 60%;
+
       }
     }
   }
@@ -365,7 +368,7 @@ a {
     margin-bottom: 10%;
     text-align: right;
     @include mq(SP) {
-      margin-bottom: 20%;
+      margin-bottom: 10%;
     }
   
   }
@@ -376,11 +379,11 @@ a {
     }
   }
   p {
-    font-size: clamp(1.2rem,0.84vw,1.6rem);
+    font-size: clamp(1.6rem,1.14vw,1.6rem);
     }
   }
 
-
+// -------------------------------------------
   #service {
     margin-bottom: 9%;
   }
@@ -389,7 +392,7 @@ a {
     margin-bottom: 6%;
     color: $black;
     @include mq(SP) {
-      margin-bottom: 15%;
+      margin-bottom: 12%;
     }
   }
 
@@ -432,7 +435,7 @@ a {
   }
 
   .service_txt_title {
-    font-size: clamp(1.6rem,1.05vw,2rem);
+    font-size: clamp(2rem,1.71vw,2.4rem);
     font-weight: bold;
     margin-bottom: 7%;
     line-height: 1.5;
@@ -443,7 +446,7 @@ a {
 
   
   .service_txt_inner {
-    font-size: clamp(1.2rem,0.98vw,1.6rem);
+    font-size: clamp(1.6rem,1.14vw,1.6rem);
     text-align: left;
     @include mq(SP) {
       margin-bottom: 13%;
@@ -452,7 +455,7 @@ a {
 
   .more {
     position: relative;
-    font-size: clamp(1.2rem,0.98vw,1.6rem);
+    font-size: 1.6rem;
     color: $black;
     border-bottom: 4px solid #333;
     display: block;
@@ -539,8 +542,8 @@ a {
     }
     tr {
       border-bottom: 1px solid $grey;
-      font-size: clamp(1.2rem,0.98vw,1.6rem);
-      
+      // font-size: clamp(1.2rem,1.14vw,1.6rem);
+      font-size: 1.6rem;
     }
     th {
       width: 40%;
@@ -601,7 +604,7 @@ a {
 .title {
     position: relative;/*+マークの位置基準とするためrelative*/
     cursor: pointer;
-    font-size:clamp(1.2rem,0.98vw,1.6rem);
+    font-size: 1.6rem;
     font-weight: normal;
     padding: 3% 3% 3% 50px;
     transition: all .5s ease;
@@ -654,7 +657,10 @@ a {
 
 
   #contact {
+    // width: 65%;
+    
     margin-bottom: 6%;
+    text-align: center;
     @include mq(SP) {
       margin-bottom: 35%    
     }
@@ -667,26 +673,34 @@ a {
   }
   
   .form {
-    width: 100%;
+    width: 65%;
     margin: 0 auto;
-    text-align: center;
+    // text-align: center;
     &_table {
       border-spacing: 0;
       width: 100%;
+      // margin: 0 auto;
+      
       th {
-        font-size: clamp(1.2rem,0.98vw,1.6rem);
-        display: block;
-        width: 100%;
+        font-size: 1.6rem;
+        // display: block;
+        width: 10%;
         text-align: left;
-        padding-top: 2%;
-        text-align: center;
+        // padding-top: 2%;
+        vertical-align: baseline;
         @include mq(SP) {
-          text-align: left;
+          // text-align: left;
+          display: block;
+          width: 100%;
           padding-bottom: 4%;
+          label {
+            
+          }
         }
       }
+      
       td {
-        width: 55%;
+        width: 30%;
         padding-bottom: 3%;
         @include mq(SP) {
           display: block;

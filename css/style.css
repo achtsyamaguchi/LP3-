@@ -23,11 +23,11 @@ a {
 }
 
 .wrapper {
-  margin: 0 10rem;
+  margin: 0 8rem;
 }
 @media screen and (max-width: 768px) {
   .wrapper {
-    margin: 0 2rem;
+    margin: 0 4rem;
   }
 }
 
@@ -95,7 +95,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .header {
-    padding: 3rem 2rem;
+    padding: 3rem 4rem;
   }
 }
 .header .header_wrapper {
@@ -122,7 +122,8 @@ a {
     align-items: center;
     position: absolute;
     top: 50%;
-    left: 40%;
+    left: 50%;
+    transform: translateY(-50px) translateX(-50px);
   }
 }
 .header_nav_ul_li {
@@ -222,15 +223,12 @@ a {
 }
 @media screen and (max-width: 768px) {
   .main_visual {
-    margin-bottom: 50%;
+    margin-bottom: 30%;
   }
 }
 
 #vision {
-  margin-bottom: 8%;
-}
-#vision br {
-  display: none;
+  margin-bottom: 6%;
 }
 @media screen and (max-width: 768px) {
   #vision br {
@@ -239,7 +237,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   #vision {
-    margin-bottom: 30%;
+    margin-bottom: 20%;
   }
 }
 
@@ -289,8 +287,11 @@ a {
     padding-bottom: 5%;
   }
 }
+.topics_txt br {
+  display: none;
+}
 .topics_title {
-  font-size: clamp(2rem, 1.11vw, 2rem);
+  font-size: clamp(2.4rem, 2.1vw, 3rem);
   letter-spacing: 0.4rem;
   font-weight: bold;
   margin-bottom: 5%;
@@ -320,11 +321,11 @@ a {
 }
 
 .section_title {
-  font-size: clamp(2.8rem, 2.31vw, 4.4rem);
-  letter-spacing: 0.7rem;
+  font-size: clamp(3rem, 2.57vw, 3.6rem);
+  letter-spacing: 0.3rem;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 8%;
+  margin-bottom: 6%;
 }
 @media screen and (max-width: 768px) {
   .section_title {
@@ -344,7 +345,7 @@ a {
 }
 
 .vision_txt {
-  width: 40%;
+  width: 55%;
   padding-top: 15%;
 }
 @media screen and (max-width: 768px) {
@@ -357,26 +358,22 @@ a {
 }
 .vision_txt h2 {
   color: rgb(86, 190, 190);
-  font-size: clamp(1.3rem, 1vw, 2rem);
+  font-size: clamp(1.6rem, 1.42vw, 2rem);
   letter-spacing: 0.3rem;
   text-align: right;
   line-height: 1.5;
-  margin-bottom: 10%;
+  margin-bottom: 8%;
 }
 @media screen and (max-width: 768px) {
   .vision_txt h2 {
     text-align: left;
-  }
-}
-@media screen and (max-width: 768px) {
-  .vision_txt h2 {
-    margin-bottom: 15%;
+    margin-bottom: 12%;
   }
 }
 .vision_txt h2::after {
   content: "";
   display: block;
-  height: 2.5px;
+  height: 3px;
   width: 36%;
   margin-left: auto;
   margin-top: 6%;
@@ -393,7 +390,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .vision_txt1 {
-    margin-bottom: 20%;
+    margin-bottom: 10%;
   }
 }
 .vision_txt1, .vision_txt2 {
@@ -405,7 +402,7 @@ a {
   }
 }
 .vision_txt p {
-  font-size: clamp(1.2rem, 0.84vw, 1.6rem);
+  font-size: clamp(1.6rem, 1.14vw, 1.6rem);
 }
 
 #service {
@@ -419,7 +416,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .service_title_other {
-    margin-bottom: 15%;
+    margin-bottom: 12%;
   }
 }
 
@@ -467,7 +464,7 @@ a {
 }
 
 .service_txt_title {
-  font-size: clamp(1.6rem, 1.05vw, 2rem);
+  font-size: clamp(2rem, 1.71vw, 2.4rem);
   font-weight: bold;
   margin-bottom: 7%;
   line-height: 1.5;
@@ -479,7 +476,7 @@ a {
 }
 
 .service_txt_inner {
-  font-size: clamp(1.2rem, 0.98vw, 1.6rem);
+  font-size: clamp(1.6rem, 1.14vw, 1.6rem);
   text-align: left;
 }
 @media screen and (max-width: 768px) {
@@ -490,7 +487,7 @@ a {
 
 .more {
   position: relative;
-  font-size: clamp(1.2rem, 0.98vw, 1.6rem);
+  font-size: 1.6rem;
   color: rgb(71, 70, 70);
   border-bottom: 4px solid #333;
   display: block;
@@ -584,7 +581,7 @@ a {
 }
 .about_list tr {
   border-bottom: 1px solid rgb(226, 225, 225);
-  font-size: clamp(1.2rem, 0.98vw, 1.6rem);
+  font-size: 1.6rem;
 }
 .about_list th {
   width: 40%;
@@ -643,7 +640,7 @@ a {
 .title {
   position: relative; /*+マークの位置基準とするためrelative*/
   cursor: pointer;
-  font-size: clamp(1.2rem, 0.98vw, 1.6rem);
+  font-size: 1.6rem;
   font-weight: normal;
   padding: 3% 3% 3% 50px;
   transition: all 0.5s ease;
@@ -693,6 +690,7 @@ a {
 
 #contact {
   margin-bottom: 6%;
+  text-align: center;
 }
 @media screen and (max-width: 768px) {
   #contact {
@@ -710,30 +708,28 @@ a {
 }
 
 .form {
-  width: 100%;
+  width: 65%;
   margin: 0 auto;
-  text-align: center;
 }
 .form_table {
   border-spacing: 0;
   width: 100%;
 }
 .form_table th {
-  font-size: clamp(1.2rem, 0.98vw, 1.6rem);
-  display: block;
-  width: 100%;
+  font-size: 1.6rem;
+  width: 10%;
   text-align: left;
-  padding-top: 2%;
-  text-align: center;
+  vertical-align: baseline;
 }
 @media screen and (max-width: 768px) {
   .form_table th {
-    text-align: left;
+    display: block;
+    width: 100%;
     padding-bottom: 4%;
   }
 }
 .form_table td {
-  width: 55%;
+  width: 30%;
   padding-bottom: 3%;
 }
 @media screen and (max-width: 768px) {
