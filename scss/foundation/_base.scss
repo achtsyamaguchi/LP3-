@@ -129,6 +129,7 @@ a {
     &_li {
       margin-right: 6%;
       font-size: clamp(1.2rem,1vw,1.8rem);
+      
       @include mq(SP) {
         margin: unset;
         font-size: 2rem;
@@ -142,6 +143,9 @@ a {
       }
       a {
         color: $black;
+        &:hover {
+          color: $green;
+        }
       }
     }
   }
@@ -675,21 +679,25 @@ a {
   .form {
     width: 65%;
     margin: 0 auto;
-    // text-align: center;
+    @include mq(SP) {
+      width: 80%;
+    }
+    
     &_table {
       border-spacing: 0;
       width: 100%;
-      // margin: 0 auto;
-      
+      @include mq(SP) {
+        width: 100%;
+      }
       th {
         font-size: 1.6rem;
-        // display: block;
         width: 10%;
         text-align: left;
-        // padding-top: 2%;
+        @include mq(TB) {
+          width: 20%;
+        }
         vertical-align: baseline;
         @include mq(SP) {
-          // text-align: left;
           display: block;
           width: 100%;
           padding-bottom: 4%;

@@ -31,10 +31,11 @@ $(function() {
         let type = 'swing';
         // href属性の取得
         let href= $(this).attr("href");
+        let buffer = 100;
         // 移動先の取得（hrefが#indexならトップ$(html)に）
         let target = $(href == "#index" ? 'html' : href);
         // 移動先の位置取得
-        let position = target.offset().top;
+        let position = target.offset().top -buffer;
         // animateでスムーススクロール
         $('body,html').animate({scrollTop:position}, speed, type);
         return false;

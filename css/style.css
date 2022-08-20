@@ -148,6 +148,9 @@ a {
 .header_nav_ul_li a {
   color: rgb(71, 70, 70);
 }
+.header_nav_ul_li a:hover {
+  color: rgb(86, 190, 190);
+}
 .header_logo a {
   justify-content: flex-start;
   letter-spacing: 0.4rem;
@@ -711,15 +714,30 @@ a {
   width: 65%;
   margin: 0 auto;
 }
+@media screen and (max-width: 768px) {
+  .form {
+    width: 80%;
+  }
+}
 .form_table {
   border-spacing: 0;
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .form_table {
+    width: 100%;
+  }
 }
 .form_table th {
   font-size: 1.6rem;
   width: 10%;
   text-align: left;
   vertical-align: baseline;
+}
+@media screen and (max-width: 1024px) {
+  .form_table th {
+    width: 20%;
+  }
 }
 @media screen and (max-width: 768px) {
   .form_table th {
@@ -817,6 +835,10 @@ blockquote:before, blockquote:after,
 q:before, q:after {
   content: "";
   content: none;
+}
+
+th {
+  font-weight: normal;
 }
 
 a {
